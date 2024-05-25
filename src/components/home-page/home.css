@@ -1,0 +1,75 @@
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height:100%;
+  background-color: #EFF6EE;
+  color: #EFF6EE;
+  scroll-margin-top: 80px;
+  margin-top: 80px;
+  scroll-snap-align: start;
+}
+#video-view{
+  position: relative;
+  width:88%;
+  max-width: 1300px;
+}
+#mobile-video-view{  
+  display: none;
+  position: relative;
+  width:88%;
+  max-width: 800px;
+}
+#homevid{
+  width: 100%;
+  max-width: 1300px;
+  height: auto;
+  border-radius: 20px;
+  pointer-events: none;
+}
+#mobile-homevid{
+  width: 100%;
+  max-width: 1300px;
+  height: 100%;
+  max-height: 800px;
+  border-radius: 20px;
+  object-position: center;
+  object-fit: cover;
+  pointer-events: none;
+}
+#learn-btn{
+  background-color: #FDB0B1;
+  font-weight: 800;
+  font-size: clamp(10px, 2.3vw, 21px);
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+#learn-btn:hover{
+  background-color: #ffa7a8;
+}
+#learn-btn-2{
+  background-color: #FDB0B1;
+  font-weight: 800;
+  font-size: clamp(17px, 3vw, 23px);
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+#learn-btn-2:hover{
+  background-color: #f29192;
+}
+@media screen and (max-width: 1000px) { 
+  #video-view {
+    display: none;
+  }
+  #mobile-video-view {
+    display: inline-block;
+  }
+}

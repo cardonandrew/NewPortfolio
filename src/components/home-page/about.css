@@ -1,0 +1,33 @@
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  text-align: center;
+  height:93vh;
+  background-color: #EFF6ED;
+  overflow: hidden;
+  scroll-margin-top: 80px;
+  scroll-snap-align: start;
+}
+#about-imgs{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#about-words {
+width: 50vw;
+min-width: 270px;
+max-width: 600px;
+}
+#about-pic {
+  width: 50vw;
+  min-width: 270px;
+  max-width: 500px;
+  border-radius: 15px;
+  object-fit: cover;
+  object-position: center;
+  }

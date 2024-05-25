@@ -1,4 +1,4 @@
-import "./index.css";
+import "./projects.css";
 
 const Projects2 = () => {
   return <div id="projects2"></div>;

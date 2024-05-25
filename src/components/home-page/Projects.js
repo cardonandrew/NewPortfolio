@@ -1,20 +1,10 @@
-import "./index.css";
+import "./projects.css";
 import site3 from "../img/pcsite.jpeg";
 import site1 from "../img/solequest.jpeg";
 import site2 from "../img/twitter.jpeg";
 import projectsTitle from "../img/projects.svg";
 
 const Projects = () => {
-  // function parallax() {
-  //   var s = document.getElementById("floater-2");
-  //   var yPos = 0 - window.scrollY / 3;
-  //   s.style.top = 50 + yPos + "%";
-  // }
-
-  // window.addEventListener("scroll", function () {
-  //   parallax();
-  // });
-
   return (
     <div id="projects">
       <img className="section-title" alt="projects-title" src={projectsTitle} />

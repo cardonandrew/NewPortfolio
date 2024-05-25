@@ -1,7 +1,8 @@
-import "./index.css";
+import "./home.css";
 import homepage from "../img/homepage.mp4";
 import mobilehomepage from "../img/mobilehomepage.mp4";
 import Button from "@mui/material/Button";
+import { AutoplayCarousel } from "./index.js";
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
           Learn More
         </Button>
       </div>
+      <AutoplayCarousel />
     </div>
   );
 };

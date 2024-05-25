@@ -1,18 +1,10 @@
 import "./home-page/index.css";
-import {
-  About,
-  Projects,
-  Projects2,
-  Home,
-  Contact,
-  AutoplayCarousel,
-} from "./home-page/index";
+import { About, Projects, Projects2, Home, Contact } from "./home-page/index";
 
 const Main = () => {
   return (
     <div id="main">
       <Home />
-      <AutoplayCarousel />
       <hr className="style4" />
       <About />
       <Projects />
