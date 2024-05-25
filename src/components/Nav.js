@@ -35,14 +35,14 @@ const Nav = () => {
         <img id="logo" src={logo} alt="LOGO" />
         <br />
         <br />
-        {["Home", "Projects", "About", "Contact"].map((text, index) => (
+        {["Home", "About", "Projects", "Contact"].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton href={"#" + text.toLowerCase()}>
               <ListItemText
                 primaryTypographyProps={{
                   fontSize: 25,
-                  fontWeight: 700,
-                  textAlign: "center",
+                  fontWeight: 300,
+                  marginLeft: "20px",
                 }}
                 primary={text}
               />
@@ -62,11 +62,11 @@ const Nav = () => {
             <a className="nav-link" href="#home">
               Home
             </a>
-            <a className="nav-link" href="#projects">
-              Projects
-            </a>
             <a className="nav-link" href="#about">
               About
+            </a>
+            <a className="nav-link" href="#projects">
+              Projects
             </a>
             <a className="nav-link" href="#contact">
               Contact

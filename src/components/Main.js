@@ -14,9 +14,8 @@ const Main = () => {
       <AutoplayCarousel />
       <hr className="style4" />
       <About />
-      <hr />
+      <hr className="style4" />
       <Projects />
-      <hr />
       <Contact />
     </div>
   );
