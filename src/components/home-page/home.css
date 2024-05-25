@@ -73,3 +73,7 @@
     display: inline-block;
   }
 }
+video::-webkit-media-controls {
+  display: none;
+  pointer-events: none;
+}
