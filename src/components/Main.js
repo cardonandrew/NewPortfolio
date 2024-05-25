@@ -2,6 +2,7 @@ import "./home-page/index.css";
 import {
   About,
   Projects,
+  Projects2,
   Home,
   Contact,
   AutoplayCarousel,
@@ -14,8 +15,9 @@ const Main = () => {
       <AutoplayCarousel />
       <hr className="style4" />
       <About />
-      <hr className="style4" />
       <Projects />
+      <hr className="style3" />
+      <Projects2 />
       <Contact />
     </div>
   );
