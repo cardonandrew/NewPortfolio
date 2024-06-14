@@ -1,4 +1,4 @@
-import "./home-page/index.css";
+import "./comp.css";
 import { About, Projects, Projects2, Home, Contact } from "./home-page/index";
 
 const Main = () => {

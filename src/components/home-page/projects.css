@@ -1,31 +1,41 @@
 #projects {
   position: relative;
   text-align: center;
-  height:93vh;
+  height:53vh;
   background-color: #EFF6ED;
   overflow: hidden;
-  scroll-margin-top: 80px;
   scroll-snap-align: start;
+  scroll-behavior: smooth;
+  scroll-margin-top: 80px;
+  margin-top: 80px;
+}
+.section-title{
+  width:28vw;
+  min-width: 280px;
+  max-width: 420px;
 }
 #projects2 {
   position: relative;
   text-align: center;
-  height:93vh;
+  height:1000vh;
   overflow: hidden;
-  scroll-margin-top: 80px;
   scroll-snap-align: start;
+  scroll-behavior: smooth;
+  /* scroll-margin-top: 80px;
+  margin-top: 80px; */
 }
 .sites{
-  width:60vw;
-  min-width:450px;
-  max-width: 1200px;
+  width:50vw;
+  min-width:325px;
+  max-width: 600px;
+  min-height: 350px;
   height:100%;
   margin-right: -9vw;
   margin-left: -9vw;
   border-radius: 15px;
   box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.424);
   object-fit: cover;
-  object-position: top;
+  object-position: top left;
   margin-top: 20px;
   z-index: 1;
   transition: .5s ease;
@@ -44,14 +54,169 @@
     align-items: center;
     height: 100%;
     z-index: 1;
+
   }
+
+  @keyframes site-slide {
+    from {
+      scale: .8;
+      opacity: 1;
+    }
+    to {
+      scale: 3;
+      opacity: 0;
+    }
+  }
+
   #scrollgif{
     width: 80px;
   }
+
   #img-container{
   display: flex;
   justify-content: center;
   width: 100%;
-  position: absolute;
-  bottom:-100px;
+  /* position: absolute; */
+  /* bottom:-100px; */
+  }
+
+  .gradient {	
+    background: linear-gradient(to bottom, #EFF6ED, #48537b,#020202, #48537b, #EFF6ED );
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .gradient:before{
+    content:'';
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.645), #21d5fd0c 75%);
+  }
+
+  .hidden{
+    opacity: 0;
+    transition: all .4s;
+  }
+  .show{
+    opacity: 1;
+
+    transition: all .4s;
+  }
+  #textblock {
+    background-color: #EFF6ED;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  #textblock-container {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 70px;
+  }
+  
+  #textblock-title {
+    color: #ffaf1b;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: "Helvetica Neue";
+  }
+  
+  #textblock-content {
+    color: #ffaf1b;
+    font-size: 20px;
+  }
+  
+  #textblock-footer {
+    color: #ffaf1b;
+    font-size: 15px;
+    font-weight: 400;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    margin-bottom: 20px;
+  
+  }
+  
+  #textblock-devsense {
+    text-decoration: none;
+    color: #ffaf1b;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  .animation, .animation_layer {
+    height: 1000px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .animation {
+    display: block;
+    position: relative;
+  }
+  
+  .animation_layer {
+    background-position: bottom center;
+    background-size: auto 1038px;
+    background-repeat: no-repeat;
+    width: 100vw;
+    margin: 0;
+    position: absolute;
+  }
+  .animation_layer.parallax {
+    position: fixed;
+    overflow: hidden;
+  }
+  
+  #par4 {
+    background-image: url(../img/parallax/4.png);
+  }
+  
+  #par5 {
+    background-image: url(../img/parallax/5.png);
+  }
+  
+  #par6 {
+    background-image: url(../img/parallax/6.png);
+  }
+  
+  #par7 {
+    background-image: url(../img/parallax/7.png);
+  }
+  
+  #par8 {
+    background-image: url(../img/parallax/8.png);
+  }
+  
+  #par9 {
+    background-image: url(../img/parallax/9.png);
+  }
+  
+  #par10 {
+    background-image: url(../img/parallax/10.png);
+  }
+  
+  #par11 {
+    background-image: url(../img/parallax/11.png);
+  }
+  
+  #par12 {
+    background-image: url(../img/parallax/12.png);
+  }
+  #par13 {
+    background-image: url(../img/parallax/13.png);
+  }
+  #par14 {
+    background-image: url(../img/parallax/14.png);
+  }
+  #par15 {
+    background-image: url(../img/parallax/15.png);
+  }
+  #par16 {
+    background-image: url(../img/parallax/16.png);
   }

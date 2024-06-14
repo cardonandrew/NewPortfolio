@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
   width:88%;
-  max-width: 1300px;
+  max-width: 1100px;
   height:14vw;
   max-height: 160px;
   min-height: 70px;
@@ -25,8 +25,8 @@
   align-items: center;
   height: 8vw;
   width: 8vw;
-  min-height: 50px;
-  max-height: 100px;
+  min-height: 60px;
+  max-height: 93px;
   transition: .3s ease;
 }
 .carousel-card:hover {
@@ -56,10 +56,6 @@
   justify-content: space-around;
   animation: slide 20s linear infinite;
   animation-delay: 10s;
-}
-
-#skill-title{
-  font-size: 1.5vw;
 }
 
 @keyframes slide {

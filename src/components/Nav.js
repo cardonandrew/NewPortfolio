@@ -59,7 +59,7 @@ const Nav = () => {
         <div id="nav-container">
           <img id="logo" src={logo} alt="LOGO" />
           <div id="nav-links">
-            <a className="nav-link" href="#home">
+            <a className="nav-link" href="#top">
               Home
             </a>
             <a className="nav-link" href="#about">
